@@ -1,17 +1,14 @@
 "use client";
-import React, { useEffect } from "react";
 import "@/style/hero.scss";
-import { FaReact } from "react-icons/fa6";
-import { TbBrandJavascript } from "react-icons/tb";
-import { SiNextdotjs } from "react-icons/si";
+import { useEffect } from "react";
+import { FaRegLightbulb } from "react-icons/fa";
+import { FaBrush, FaReact } from "react-icons/fa6";
+import { GiArcheryTarget } from "react-icons/gi";
 import { IoLogoCss3 } from "react-icons/io5";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap/all";
+import { SiNextdotjs } from "react-icons/si";
+import { TbBrandJavascript } from "react-icons/tb";
 import Typed from "typed.js";
 import Button from "./Button";
-import { FaBrush } from "react-icons/fa6";
-import { GiArcheryTarget } from "react-icons/gi";
-import { FaRegLightbulb } from "react-icons/fa";
 
 function Hero() {
   // useGSAP(() => {
@@ -35,9 +32,6 @@ function Hero() {
   //     });
   // });
 
-
-
-
   // ================================ flip image ======================================
   function imageFlip() {
     const flip = document.querySelector(".hero-img-flip-con");
@@ -60,29 +54,21 @@ function Hero() {
   imageFlip();
   // ================================ flip image end ======================================
 
-
-
-
-
   // ================================ SHOW ELM  ======================================
   function showelm() {
     const sec2Contant = document.querySelector(".scnd-contant");
 
     window.addEventListener("scroll", () => {
       if (window.scrollY > 300) {
-        sec2Contant.classList.add("headinga");
+        sec2Contant?.classList.add("headinga");
       } else {
-        sec2Contant.classList.remove("headinga");
+        sec2Contant?.classList.remove("headinga");
       }
     });
   }
   showelm();
 
   // ================================ SHOW ELM END ======================================
-
-
- 
-
 
   useEffect(() => {
     const typed = new Typed(".element", {
@@ -95,10 +81,7 @@ function Hero() {
       // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
-
-   
-   
-  },[]);
+  }, []);
   return (
     <>
       <div className="container">
@@ -109,8 +92,8 @@ function Hero() {
             <span className="element"></span>
           </h3>
           <p>
-            I'm creative designer based in India, and I'm very passionate and
-            dedicated to my work.
+            I&apos;m creative designer based in India, and I&apos;m very
+            passionate and dedicated to my work.
           </p>
 
           <Button name="About me" href="about" />

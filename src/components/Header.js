@@ -5,7 +5,6 @@ import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import { IoIosMenu } from "react-icons/io";
 
-
 function Header() {
   const [menu, setMenu] = useState(false);
   function toggle() {
