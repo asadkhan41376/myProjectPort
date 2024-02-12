@@ -57,6 +57,7 @@ function Hero() {
       }, 5000);
     }, 8000);
   }
+  imageFlip();
   // ================================ flip image end ======================================
 
 
@@ -75,6 +76,8 @@ function Hero() {
       }
     });
   }
+  showelm();
+
   // ================================ SHOW ELM END ======================================
 
 
@@ -92,8 +95,8 @@ function Hero() {
       // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
-    showelm();
-    imageFlip();
+
+   
    
   },[]);
   return (
