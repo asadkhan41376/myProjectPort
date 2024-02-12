@@ -93,9 +93,9 @@ function Hero() {
 
 
   useEffect(() => {
-    // showelm();
-    // imageFlip();
-    // typingAnime();
+    showelm();
+    imageFlip();
+    typingAnime();
   },[]);
   return (
     <>
