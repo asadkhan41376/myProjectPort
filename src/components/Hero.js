@@ -78,7 +78,10 @@ function Hero() {
   // ================================ SHOW ELM END ======================================
 
 
-  function typingAnime() {
+ 
+
+
+  useEffect(() => {
     const typed = new Typed(".element", {
       strings: ["Frontend Developer", "I Love Coding", "Creat Some New"],
       typeSpeed: 200,
@@ -89,13 +92,9 @@ function Hero() {
       // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
-  }
-
-
-  useEffect(() => {
     showelm();
     imageFlip();
-    typingAnime();
+   
   },[]);
   return (
     <>
