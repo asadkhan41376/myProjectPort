@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "@/style/hero.scss";
 import { FaReact } from "react-icons/fa6";
 import { TbBrandJavascript } from "react-icons/tb";
@@ -14,6 +14,56 @@ import { GiArcheryTarget } from "react-icons/gi";
 import { FaRegLightbulb } from "react-icons/fa";
 
 function Hero() {
+  const [isSlide, setIsSlide] = useState(false);
+  useEffect(() => {
+    // ==========================  Element show animetion end  ====================
+
+    function showelm() {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          setIsSlide(true);
+        } else {
+          setIsSlide(false);
+        }
+      });
+    }
+    showelm();
+
+    // ==========================  Element show animetion end  ====================
+
+    // const typed = new Typed(".element", {
+    //   strings: ["Frontend Developer", "I Love Coding", "Creat Some New"],
+    //   typeSpeed: 200,
+    //   smartBackspace: true,
+    //   loop: true,
+    // });
+    // return () => {
+    //   // Destroy Typed instance during cleanup to stop animation
+    //   typed.destroy();
+    // };
+
+    // ================================ flip image ======================================
+    function imageFlip() {
+      const flip = document.querySelector(".hero-img-flip-con");
+      setInterval(function () {
+        // Rotate to 180 degrees every 8 seconds
+        flip.style.transform = "rotateY(180deg)";
+        flip.addEventListener("mousemove", function () {
+          flip.style.transform = "rotateY(180deg)";
+        });
+        flip.addEventListener("mouseleave", function () {
+          flip.style.transform = "rotateY(0)";
+        });
+
+        // After 5 second, rotate back to 0 degrees
+        setTimeout(function () {
+          flip.style.transform = "rotateY(0)";
+        }, 5000);
+      }, 6000);
+    }
+    imageFlip();
+    // ================================ flip image end ======================================
+  }, []);
   // useGSAP(() => {
 
   //   let tl = gsap.timeline();
@@ -35,70 +85,10 @@ function Hero() {
   //     });
   // });
 
-
-
-
-  // ================================ flip image ======================================
-  function imageFlip() {
-    const flip = document.querySelector(".hero-img-flip-con");
-    setInterval(function () {
-      // Rotate to 180 degrees every 8 seconds
-      flip.style.transform = "rotateY(180deg)";
-      flip.addEventListener("mousemove", function () {
-        flip.style.transform = "rotateY(180deg)";
-      });
-      flip.addEventListener("mouseleave", function () {
-        flip.style.transform = "rotateY(0)";
-      });
-
-      // After 5 second, rotate back to 0 degrees
-      setTimeout(function () {
-        flip.style.transform = "rotateY(0)";
-      }, 5000);
-    }, 8000);
-  }
-  imageFlip();
-  // ================================ flip image end ======================================
-
-
-
-
-
   // ================================ SHOW ELM  ======================================
-  function showelm() {
-    const sec2Contant = document.querySelector(".scnd-contant");
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        sec2Contant.classList.add("headinga");
-      } else {
-        sec2Contant.classList.remove("headinga");
-      }
-    });
-  }
-  showelm();
 
   // ================================ SHOW ELM END ======================================
 
-
- 
-
-
-  useEffect(() => {
-    const typed = new Typed(".element", {
-      strings: ["Frontend Developer", "I Love Coding", "Creat Some New"],
-      typeSpeed: 200,
-      smartBackspace: true,
-      loop: true,
-    });
-    return () => {
-      // Destroy Typed instance during cleanup to stop animation
-      typed.destroy();
-    };
-
-   
-   
-  },[]);
   return (
     <>
       <div className="container">
@@ -133,7 +123,7 @@ function Hero() {
       </div>
 
       <section className="second-section">
-        <div className="scnd-contant">
+        <div className={`scnd-contant ${isSlide ? "slide" : ""}`}>
           <div className="card-scnd">
             <div className="img">
               <img src="/scnd-img1.webp" alt="" />

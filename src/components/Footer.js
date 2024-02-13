@@ -1,38 +1,36 @@
-"use client"
+"use client";
 
-import React, { useEffect } from 'react'
-import "@/style/footer.scss"
-
+import React, { useEffect, useState } from "react";
+import "@/style/footer.scss";
 
 function Footer() {
-useEffect(()=>{
-   let footer = document.querySelector(".footer");
-
-   window.addEventListener("scroll",function(){
-    if(window.scrollY > 750){
-        footer.classList.add("slide");
-    }else{
-        footer.classList.remove("slide");
-    }
-   })
-})
+  const [isSlide, setIsSlide] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 750) {
+        setIsSlide(true);
+      } else {
+        setIsSlide(false);
+      }
+    });
+  }, []);
 
   return (
     <>
-      <div className="footer ">
-       
+      <div className={`footer ${isSlide ? " slide" : ""} `}>
         <div className="left">
-            <h3>Developed with love by Mohammad Asad © 2024 <br />
+          <h3>
+            Developed with love by Mohammad Asad © 2024 <br />
             asadkhan41376@gmail.com
-            </h3>
+          </h3>
         </div>
         <div className="right">
-            <h3>Terms & ConditionPrivacy </h3>
-            <h3>Policy</h3>
+          <h3>Terms & ConditionPrivacy </h3>
+          <h3>Policy</h3>
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

@@ -1,36 +1,34 @@
-"use client"
+"use client";
 
-import React from 'react'
+import React, { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 
-import { useEffect } from 'react';
-
 function ScrollTop() {
-    useEffect(()=>{
-        let topBtn =document.querySelector(".to-top-btn");
-        topBtn.addEventListener("click",function(){
-          window.scrollTo(0,0);
-        })
+  const [isActiv, setIsActiv] = useState(false);
 
-        window.addEventListener("scroll",function(){
-          if(window.scrollY > 450){
-            topBtn.classList.add("active");
-          }
-          else{
-            topBtn.classList.remove('active');
-    
-        }
-        })
-      
-      })
+  window.addEventListener("scroll", function () {
+    if (this.window.scrollY > 450) {
+      setIsActiv(true);
+    } else {
+      setIsActiv(false);
+    }
+  });
+
+  const toTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
-       <div className="to-top-btn">
-       <IoIosArrowUp /><h1>Back To Top</h1>
-
-   </div>
+      <div className={`to-top-btn ${isActiv ? "active" : ""}`} onClick={toTop}>
+        <IoIosArrowUp />
+        <h1>Back To Top</h1>
+      </div>
     </div>
-  )
+  );
 }
 
-export default ScrollTop
+export default ScrollTop;
