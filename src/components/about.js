@@ -32,12 +32,12 @@ function About() {
       <div className="About-container">
         <div className="overaly"></div>
         <div className="containt">
-          <h3>I'm a Designer</h3>
+          <h3>I m a Designer</h3>
           <h1>
             I Can Design Anything <br /> You Want
           </h1>
           <p>
-            Hello there! I'm a web designer, and I'm very passionate and
+            Hello there! I m a web designer, and I'm very passionate and
             dedicated to my work. With 20 years experience as a professional web
             developer, I have acquired the skills and knowledge necessary to
             make your project a success. I enjoy every step of the design
@@ -57,13 +57,13 @@ function About() {
         <div className="icons-div">
          
           <div className="elm" data-img="/insta.avif">
-            <FaInstagram className="icon instagram" href="" />
+          <Link href="https://www.instagram.com/mohd____asad_" target="blank"><FaInstagram className="icon instagram" /></Link> 
           </div>
           <div className="elm" data-img="/yt.avif">
-          <Link href="">  <FaYoutube className="icon yt" /></Link>
+          <Link href="https://youtube.com/channel/UC8HPJmfryPXaXq01IR-ZuBg" target="blank">  <FaYoutube className="icon yt" /></Link>
           </div>
           <div className="elm" data-img="/wb.avif">
-          <FaWhatsapp  className="icon whatsup"/>
+          <Link href="https://wa.me/7976891704" target="blank"><FaWhatsapp  className="icon whatsup"/></Link>
 
           </div>
         </div>
