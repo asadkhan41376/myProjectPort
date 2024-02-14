@@ -84,10 +84,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
-  padding:  0 15px;
+  padding: 0 15px;
   position: relative;
 }
-.section-2 h1{
+.section-2 h1 {
   width: 60%;
   color: rgb(206, 204, 204);
   font-size: 30px;
@@ -100,7 +100,7 @@
   font-weight: bold;
   color: #a5355a;
 }
-.icons-div{
+.icons-div {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -113,7 +113,7 @@
   color: #d90505;
 }
 .whatsup {
-  color: #3BE35A;
+  color: #3be35a;
 }
 
 .icon {
@@ -121,7 +121,7 @@
   cursor: pointer;
 }
 
-.dotImag{
+.dotImag {
   position: absolute;
   top: 10px;
   right: 0;
@@ -146,32 +146,23 @@
     font-size: 15px;
   }
 
+  .section-2 h1 {
+    width: 100%;
+    // padding: 0 15px;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+  }
 
-.section-2 h1{
-  width: 100%;
-  // padding: 0 15px;
-  font-size: 20px;
-  line-height: 35px;
-  text-align: center;
+  .icons-div {
+    gap: 50px;
+  }
+
+  .icon {
+    font-size: 60px;
+    cursor: pointer;
+  }
 }
-
-.icons-div{
-  gap: 50px;
-}
-
-
-.icon {
-  font-size: 60px;
-  cursor: pointer;
-}
-}
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 900px) {
   .containt {
@@ -193,8 +184,7 @@
     // width: 80%;
     font-size: 15px;
   }
-  .dotImag{
-    height: 150px;
-   
+  .dotImag {
+    display: none;
   }
 }

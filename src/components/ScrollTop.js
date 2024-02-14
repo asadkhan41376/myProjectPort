@@ -5,21 +5,32 @@ import { IoIosArrowUp } from "react-icons/io";
 
 function ScrollTop() {
   const [isActiv, setIsActiv] = useState(false);
-
-  window.addEventListener("scroll", function () {
-    if (this.window.scrollY > 450) {
-      setIsActiv(true);
-    } else {
-      setIsActiv(false);
-    }
-  });
+  if (typeof window !== 'undefined'){
+    window.addEventListener("scroll", function () {
+      if (this.window.scrollY > 450) {
+        setIsActiv(true);
+      } else {
+        setIsActiv(false);
+      }
+    });
+  }
+  // window.addEventListener("scroll", function () {
+  //   if (this.window.scrollY > 450) {
+  //     setIsActiv(true);
+  //   } else {
+  //     setIsActiv(false);
+  //   }
+  // });
 
   const toTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+    
   };
+
+  
 
   return (
     <div>

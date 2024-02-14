@@ -10,6 +10,8 @@ nav{
 }
 .logo{
     color: white;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .nav-list ul {
@@ -22,9 +24,10 @@ nav{
 .nav-list ul a{
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
+    position: relative;
 }
 
 // mobile navigation ==========
@@ -32,6 +35,24 @@ nav{
 
 nav a:hover{
 color:#A5355A;
+
+}
+
+.nav-list ul a::after{
+    content: "";
+    position: absolute;
+    background-color: #A5355A;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom:  -3px;
+    transition: .3s;
+
+}
+.nav-list ul a:hover::after{
+    width: 100%;
+  
+   
 }
 
 
@@ -86,6 +107,13 @@ color:#A5355A;
         text-transform: capitalize;
         margin-top: 10px;
     }
+
+    .nav-mobile a:hover{
+        color:#A5355A;
+        
+        }
+        
+      
 
     
 }
