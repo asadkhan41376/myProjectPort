@@ -11,18 +11,13 @@ import Typ from "./Typ";
 
 function Hero() {
   const [isSlide, setIsSlide] = useState(false);
-
-  function showelm() {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        setIsSlide(true);
-      } else {
-        setIsSlide(false);
-      }
-    });
-  }
-  showelm();
-
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      setIsSlide(true);
+    } else {
+      setIsSlide(false);
+    }
+  });
 
   // useGSAP(() => {
 
@@ -66,7 +61,7 @@ function Hero() {
         <div className={`scnd-contant ${isSlide ? "slide" : ""}`}>
           <div className="card-scnd">
             <div className="img">
-              <img src="/scnd-img1.webp" alt="" />
+              <img src="/img/scnd-img1.webp" alt="" />
               <GiArcheryTarget className="img-icon" />
             </div>
             <div className="card-contant">
@@ -80,7 +75,7 @@ function Hero() {
 
           <div className="card-scnd">
             <div className="img">
-              <img src="/scnd-img2.webp" alt=""   />
+              <img src="/img/scnd-img2.webp" alt=""   />
               <FaBrush className="img-icon " />
             </div>
             <div className="card-contant">
@@ -94,7 +89,7 @@ function Hero() {
 
           <div className="card-scnd">
             <div className="img">
-              <img src="/scnd-img3.webp" alt=""/>
+              <img src="/img/scnd-img3.webp" alt=""/>
               <FaRegLightbulb className="img-icon" />
             </div>
             <div className="card-contant">

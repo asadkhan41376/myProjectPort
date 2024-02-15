@@ -38,8 +38,8 @@ function imageFlip() {
       <div className="imgcon">
           <div className="hero-img">
             <div className="hero-img-flip-con">
-              <Image src="/hero1.webp" className="frunt" alt="" priority="high" width={850}   height={850}/>
-              <Image src="/hero2.webp" alt="sss" className="back" priority="high" width={850}   height={850} />
+              <img src="/img/hero1.webp" className="frunt" alt="" priority="high"/>
+              <img src="/img/hero2.webp" alt="sss" className="back" priority="high"  />
             </div>
             <div className="icons">
               <FaReact className="icon-react icon" />

@@ -31,7 +31,7 @@ function Header() {
               <Link href="/skill" onClick={menu ? "" : toggle}>skill</Link>
             </li>
             <li>
-              <Link href=""onClick={menu ? "" : toggle}>project</Link>
+              <Link href="/project"onClick={menu ? "" : toggle}>project</Link>
             </li>
             <li>
               <Link href="/contect" onClick={menu ? "" : toggle}>contect</Link>
