@@ -47,7 +47,7 @@ function About() {
         </div>
       </div>
       <div className="section-2">
-        <Image src="/dot.png"  className="dotImag"alt=""  width={300} height={300}/>
+        <Image src="/img/dot.png"  className="dotImag"alt=""  width={300} height={300}/>
         <h1>
          <span className="h1-span"> Get in touch </span>  with me on social media. It's the best way to stay
           connected with me and get quick updates on what I'm up to. Don't miss
@@ -56,13 +56,13 @@ function About() {
         </h1>
         <div className="icons-div">
          
-          <div className="elm" data-img="/insta.avif">
+          <div className="elm" data-img="/img/insta.webp">
           <Link href="https://www.instagram.com/mohd____asad_" target="blank"><FaInstagram className="icon instagram" /></Link> 
           </div>
-          <div className="elm" data-img="/yt.avif">
+          <div className="elm" data-img="/img/yt.webp">
           <Link href="https://youtube.com/channel/UC8HPJmfryPXaXq01IR-ZuBg" target="blank">  <FaYoutube className="icon yt" /></Link>
           </div>
-          <div className="elm" data-img="/wb.avif">
+          <div className="elm" data-img="/img/wb.webp">
           <Link href="https://wa.me/7976891704" target="blank"><FaWhatsapp  className="icon whatsup"/></Link>
 
           </div>

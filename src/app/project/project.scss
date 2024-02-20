@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 100px;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #2B2D33;
@@ -12,9 +12,29 @@
 
 .project_heading{
     position: absolute;
+    width: 100%;
     top: 70px;
     left: 45%;
     text-transform: uppercase;
     color: white;
 
+}
+
+
+
+@media only screen and (max-width: 500px){
+    .project_heading{
+      
+        left: 28%; 
+    
+    }
+    
+    .project{
+        width: 100%;
+
+        gap: 8px;
+      
+        padding: 50px 50px;
+  
+    }
 }
