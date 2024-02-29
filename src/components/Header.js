@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "@/style/header.scss";
+
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import { IoIosMenu } from "react-icons/io";

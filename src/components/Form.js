@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "@/style/Form.scss";
+
 function Form() {
     
   return (

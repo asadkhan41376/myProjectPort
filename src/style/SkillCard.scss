@@ -1,0 +1,19 @@
+.Skill_card{
+    width: 400px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.517);
+    border-radius: 15px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+ justify-content: center;
+ flex-direction: column;
+position: relative;
+z-index: 1;
+color: white;
+}
+.Skill_card h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+

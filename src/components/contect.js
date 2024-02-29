@@ -1,6 +1,6 @@
 import React from "react";
-import "@/style/contect.scss";
-// import Button from "@/components/Button";
+
+
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
