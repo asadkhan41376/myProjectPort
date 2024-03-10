@@ -8,7 +8,13 @@ import { GiArcheryTarget } from "react-icons/gi";
 import { FaRegLightbulb } from "react-icons/fa";
 import ImgFlip from "./ImgFlip";
 import Typ from "./Typ";
+import { useGSAP } from "@gsap/react";
+import { TimeLine } from "./Header";
 
+
+
+
+ 
 function Hero() {
   const [isSlide, setIsSlide] = useState(false);
   window.addEventListener("scroll", () => {
@@ -19,8 +25,30 @@ function Hero() {
     }
   });
 
+ 
+  useGSAP(()=>{
+    const tl = TimeLine()
+      
+    tl.from(".content", {
+      x: -100,
+      opacity: 0,
+      duration: 1.8,
+    })
+      .from(".hero-img img", {
+        x: 100,
+        opacity: 0,
+        duration: 1.8,
+      })
+      .from(".icon-react,.icon-next,.icon-js,.icon-css", {
+        stagger: 0.5,
+        opacity: 0,
+        scale: 0,
+        duration: 1,
+      });
+  })
+   
 
-  
+
   return (
     <>
       <div className="container">
