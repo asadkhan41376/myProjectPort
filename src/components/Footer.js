@@ -73,7 +73,7 @@ function Footer() {
 
         <div className="footer_secound">
           <div className="img_box">
-            <img src="" alt="" />
+            <img src="/img/my.jpg" alt="" />
           </div>
           <h4>
             Developed with love by Mohammad Asad © {isYear}<br />

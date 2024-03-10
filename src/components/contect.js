@@ -6,6 +6,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import Form from "./Form";
 
+
+
 {/* <a href="https://www.instagram.com/md._.asad_" class="social-icon"><i class="fab fa-instagram"></i></a>
 <a href="https://wa.me/7976891704" class="social-icon"><i class="fab fa-whatsapp"></i></a>
 <a href="https://youtube.com/channel/UC8HPJmfryPXaXq01IR-ZuBg" class="social-icon"><i class="fab fa-youtube"></i></a> */}
@@ -14,40 +16,7 @@ import Form from "./Form";
 function Contect() {
   return (
     <>
-      <section className="form-section">
-        <Form />
-
-        <div className="formRgtPrt">
-          <div className="elm">
-            <div className="icon">
-             <a href="#contect-secound-section"><FaLocationDot style={{ color: "#836BF0" }} /></a> 
-            </div>
-            <div className="eml_heading">
-              <h1>Address</h1>
-             <a href="#contect-secound-section"><p> Sajja Nagar "A" Block mullatalai, Udaipur Raj.</p></a> 
-            </div>
-          </div>
-
-          <div className="elm">
-            <div className="icon">
-             <a href="tel:7976891704"><FaPhoneAlt style={{ color: "#F75023" }} /></a> 
-            </div>
-            <div className="eml_heading">
-              <h1>Phone</h1>
-             <a href="tel:7976891704"> <p>+91 7976891704</p></a>
-            </div>
-          </div>
-          <div className="elm">
-            <div className="icon">
-             <a href="mailto:asadkhan41376@gmail.com"> <MdEmail style={{ color: "#1CBE59" }} /></a>
-            </div>
-            <div className="eml_heading">
-              <h1>Emial</h1>
-              <a href="mailto:asadkhan41376@gmail.com"><p>asadkhan41376@gmail.com</p></a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <Form/>
 
       <section className="contect-secound-section" id="contect-secound-section">
         <div className="map">

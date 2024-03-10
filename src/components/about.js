@@ -12,7 +12,7 @@ import Image from "next/image";
 function About() {
   useEffect(() => {
     let bck = document.querySelector(".section-2");
-    let elm = document.querySelectorAll(".elm");
+    let elm = document.querySelectorAll(".AboutElm");
 
     // social-media effect
     elm.forEach(function (e) {
@@ -37,7 +37,7 @@ function About() {
             I Can Design Anything <br /> You Want
           </h1>
           <p>
-            Hello there! I m a web designer, and I'm very passionate and
+            Hello I m a web designer, and I'm very passionate and
             dedicated to my work. With 20 years experience as a professional web
             developer, I have acquired the skills and knowledge necessary to
             make your project a success. I enjoy every step of the design
@@ -56,13 +56,13 @@ function About() {
         </h1>
         <div className="icons-div">
          
-          <div className="elm" data-img="/img/insta.webp">
+          <div className="AboutElm" data-img="/img/insta.webp">
           <Link href="https://www.instagram.com/mohd____asad_" target="blank"><FaInstagram className="icon instagram" /></Link> 
           </div>
-          <div className="elm" data-img="/img/yt.webp">
+          <div className="AboutElm" data-img="/img/yt.webp">
           <Link href="https://youtube.com/channel/UC8HPJmfryPXaXq01IR-ZuBg" target="blank">  <FaYoutube className="icon yt" /></Link>
           </div>
-          <div className="elm" data-img="/img/wb.webp">
+          <div className="AboutElm" data-img="/img/wb.webp">
           <Link href="https://wa.me/7976891704" target="blank"><FaWhatsapp  className="icon whatsup"/></Link>
 
           </div>

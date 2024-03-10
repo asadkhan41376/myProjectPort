@@ -1,0 +1,245 @@
+
+
+.elements {
+  padding:  80px 50px;
+  color: aliceblue;
+}
+.elements h1{
+  text-align: center;
+  font-weight: 800;
+  font-size: 3vw;
+// border: 2px solid wheat;
+padding-bottom:50px;
+}
+
+.num span {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.elm {
+  width: 100%;
+  //   height: 130px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  // overflow: hidden;
+  justify-content: space-between;
+  z-index: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.471);
+}
+
+
+
+
+
+.mobile_image{
+  display: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+ 
+}
+.mobile_image video{
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease;
+  object-fit: cover;
+ 
+}
+
+.mobile_image video:hover{
+ transform: scale(1.2);
+ 
+}
+ .image {
+  position: absolute;
+  right: 350px;
+  width: 15vw;
+  height: 18vw;
+  border: 2px solid rgba(255, 255, 255, 0.576);
+  border-radius: 15px;
+  // display: none;
+  overflow: hidden;
+  opacity: 0;
+  box-shadow: 15px 15px 15px black;
+  transform: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.elm:hover.elm .image {
+  opacity: 1;
+  transform: rotate(8deg);
+  animation-name: rotateAnimation ; 
+  animation-duration: .8s; 
+
+}
+
+@keyframes rotateAnimation {
+  0% {
+    opacity: 0;
+    transform:  rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(8deg);
+  }
+}
+.elm .heading{
+  // border: 2px solid wheat;
+  padding: 20px;
+}
+
+.elm .heading h2 {
+  font-size: 2vw;
+  margin-bottom: 30px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.elm .heading p {
+  width: 60%;
+  color: #6a6a6a;
+  font-weight: bold;
+  
+}
+
+
+.elm .heading{
+  width: 80%;
+}
+
+.elm .icon {
+  width: 70px;
+  height: 70px;
+  // background-color: orange;
+  border: 1px solid #A5355A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.icon .arrow_icon {
+  transform: rotate(-30deg);
+  font-size: 25px;
+  color: white;
+  font-weight: 200;
+}
+
+.icon .overlay {
+  width: 100%;
+  height: 100%;
+  background-color:#A5355A;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  transition: all ease 0.5s;
+  z-index: -1;
+}
+
+.elm:hover.elm .overlay {
+  top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .elements h1{
+   font-size: 25px;
+  }
+
+  .elm .heading{
+    width: 100%;
+  }
+  .elements {
+    padding:  80px 20px;
+    color: aliceblue;
+  }
+  
+  .elm {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+    gap: 20px;
+  }
+
+  .num span {
+    font-size: 18px;
+  }
+
+  .mobile_image {
+    display: block;
+  }
+  .image {
+    display: none;
+  }
+  .elm .heading h2 {
+    font-size: 28px;
+  }
+
+  .elm .heading p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    // background-color: orange;
+  }
+  .icon .arrow_icon {
+    transform: rotate(-20deg);
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .elements {
+    padding: 0 25px;
+  }
+  .elements h1{
+    padding-top: 20px;
+  }
+
+  .num span {
+    font-size: 20px;
+  }
+
+  .elm {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .elm .heading h2 {
+    font-size: 4vw;
+  }
+
+  .elm .heading p {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .icon {
+    width: 70px;
+    height: 60px;
+    padding: 15px;
+  }
+  .icon .arrow_icon {
+    transform: rotate(-20deg);
+    font-size: 25px;
+  }
+
+  .elm .image {
+    display: none;
+  }
+}

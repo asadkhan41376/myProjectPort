@@ -19,27 +19,8 @@ function Hero() {
     }
   });
 
-  // useGSAP(() => {
 
-  //   let tl = gsap.timeline();
-  //   tl.from(".content", {
-  //     x: -100,
-  //     opacity: 0,
-  //     duration: 2,
-  //   })
-  //     .from(".hero-img img", {
-  //       x: 100,
-  //       opacity: 0,
-  //       duration: 2,
-  //     })
-  //     .from(".icon-react,.icon-next,.icon-js,.icon-css", {
-  //       stagger: 0.5,
-  //       opacity: 0,
-  //       scale: 0,
-  //       duration: 1,
-  //     });
-  // });
-
+  
   return (
     <>
       <div className="container">
