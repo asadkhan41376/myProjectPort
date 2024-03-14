@@ -1,11 +1,10 @@
-import Contect from '@/components/contect'
+import ContactForm from '@/components/ContactForm'
 import React from 'react'
 
 function page() {
   return (
     <div>
-      
-      <Contect/>
+      <ContactForm/>
     </div>
   )
 }

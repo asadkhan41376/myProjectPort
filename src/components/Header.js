@@ -52,7 +52,7 @@ function Header() {
               <Link href="/project"onClick={menu ? "" : toggle}>project</Link>
             </li>
             <li className="staGar">
-              <Link href="/contect" onClick={menu ? "" : toggle}>contect</Link>
+              <Link href="/contact" onClick={menu ? "" : toggle}>contect</Link>
             </li>
           </ul>
         </div>
