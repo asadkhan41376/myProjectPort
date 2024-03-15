@@ -1,33 +1,43 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useLocation } from "react";
 import gsap from "gsap/all";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import { IoIosMenu } from "react-icons/io";
-import { useGSAP } from "@gsap/react";
 
 
 
- export const TimeLine= ()=>{
-  const tl = gsap.timeline()
-  tl.from(".logo", {
-    y: -100,
-    opacity: 0,
-    duration: 1.2,
-  }).from(".staGar", {
-    y: -100,
-    stagger: 0.5,
-    opacity: 0,
-    duration: 1.2,
-  })
-  return tl 
- }
+
+
+
+//  export const TimeLine= ()=>{
+//   const tl = gsap.timeline()
+//   tl.from(".logo", {
+//     y: -100,
+//     opacity: 0,
+//     duration: 1,
+//   }).from(".staGar", {
+//     y: -100,
+//     stagger: .1,
+//     opacity: 0,
+//     duration: 1,
+//   })
+
+//   return tl 
+//  }
 
 function Header() {
+
   const [menu, setMenu] = useState(true);
   function toggle() {
     setMenu(!menu);  // menu  is not ecual to  setMenu 
   }
+window.addEventListener("scroll",function(){
+  if(window.scrollY > 5){
+    setMenu(menu); 
+  }
+ 
+})
 
   return (
     <>
@@ -40,7 +50,7 @@ function Header() {
         <div className={menu ? " nav-list " : "nav-mobile"}>
           <ul>
             <li className="staGar">
-              <Link href="/" onClick={menu ? "" : toggle}>home</Link>
+              <Link href="/" onClick={menu ? "" : toggle }>home</Link>
             </li>
             <li  className="staGar" >
               <Link href="/about"onClick={menu ? "" : toggle}>about</Link>
@@ -57,7 +67,7 @@ function Header() {
           </ul>
         </div>
         <div className="menu-i" onClick={toggle}>
-          {menu ?  <IoIosMenu />: <IoMdClose />}
+          {menu ?  <IoIosMenu   className="staGar menu" />: <IoMdClose className="close" />}
         </div>
       </nav>
     </>

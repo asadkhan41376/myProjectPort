@@ -1,9 +1,10 @@
+import { Box } from '@mui/material'
 import React from 'react'
 
 function ContactForm() {
   return (
     <>
-        <form className="form_container">
+        {/* <form className="form_container">
     <div className="form-group">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required/>
@@ -27,8 +28,10 @@ function ContactForm() {
     <div className="form-group">
       <button type="submit">Submit</button>
     </div>
-  </form>
-
+  </form> */}
+  <div className='form_container'>
+    
+    </div>
     </>
   )
 }

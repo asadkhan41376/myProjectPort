@@ -1,5 +1,4 @@
 .btn {
-  border: 1px solid #3c6f91;
   padding: 10px 50px;
   border-radius: 15px;
   font-size: 15px;
@@ -9,11 +8,11 @@
   background: transparent;
   transition: 0.3s;
   text-decoration: none;
+  background-color:var(--color);
 }
 
 .btn:hover {
-  background-color: #3c6f91;
-  border: white;
-  color: wheat;
+  background-color:var(--bgcolor);
+  
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.415);
 }

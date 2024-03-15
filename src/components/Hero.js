@@ -1,7 +1,6 @@
 "use client";
-import React, {  useState } from "react";
+import React, {  useEffect, useState } from "react";
 import "@/style/hero.scss";
-import gsap from "gsap/all";
 import Button from "./Button";
 import { FaBrush } from "react-icons/fa6";
 import { GiArcheryTarget } from "react-icons/gi";
@@ -14,38 +13,46 @@ import { TimeLine } from "./Header";
 
 
 
+
+
  
 function Hero() {
   const [isSlide, setIsSlide] = useState(false);
+
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
       setIsSlide(true);
     } else {
       setIsSlide(false);
     }
+    return()=>{
+      window.removeEventListener("scroll");
+    }
   });
 
  
-  useGSAP(()=>{
-    const tl = TimeLine()
+  // useGSAP(()=>{
+  //   const tl = TimeLine()
       
-    tl.from(".content", {
-      x: -100,
-      opacity: 0,
-      duration: 1.8,
-    })
-      .from(".hero-img img", {
-        x: 100,
-        opacity: 0,
-        duration: 1.8,
-      })
-      .from(".icon-react,.icon-next,.icon-js,.icon-css", {
-        stagger: 0.5,
-        opacity: 0,
-        scale: 0,
-        duration: 1,
-      });
-  })
+  //   tl.from(".content", {
+  //     x: -100,
+  //     opacity: 0,
+  //     duration: 1.5,
+  //   })
+  //     .from(".hero-img img", {
+  //       x: 100,
+  //       opacity: 0,
+  //       duration: 1.5,
+  //     })
+  //     .from(".icon-react,.icon-next,.icon-js,.icon-css", {
+  //       stagger: 0.2,
+  //       opacity: 0,
+  //       scale: 0,
+  //       duration: 1.2,
+  //     });
+  // })
+
+ 
    
 
 
@@ -53,7 +60,7 @@ function Hero() {
     <>
       <div className="container">
         <div className="content">
-          <h5>Hello I am</h5>
+          <h5 >Hello I am</h5>
           <h1>Mohammad Asad</h1>
           <Typ/>
           <p>

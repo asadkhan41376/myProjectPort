@@ -57,13 +57,13 @@ function About() {
         <div className="icons-div">
          
           <div className="AboutElm" data-img="/img/insta.webp">
-          <Link href="https://www.instagram.com/mohd____asad_" target="blank"><FaInstagram className="icon instagram" /></Link> 
+          <Link href="https://www.instagram.com/mohd____asad_" target="blank"><FaInstagram className="about_icon instagram" /></Link> 
           </div>
           <div className="AboutElm" data-img="/img/yt.webp">
-          <Link href="https://youtube.com/channel/UC8HPJmfryPXaXq01IR-ZuBg" target="blank">  <FaYoutube className="icon yt" /></Link>
+          <Link href="https://youtube.com/channel/UC8HPJmfryPXaXq01IR-ZuBg" target="blank">  <FaYoutube className="about_icon yt" /></Link>
           </div>
           <div className="AboutElm" data-img="/img/wb.webp">
-          <Link href="https://wa.me/7976891704" target="blank"><FaWhatsapp  className="icon whatsup"/></Link>
+          <Link href="https://wa.me/7976891704" target="blank"><FaWhatsapp  className="about_icon whatsup"/></Link>
 
           </div>
         </div>

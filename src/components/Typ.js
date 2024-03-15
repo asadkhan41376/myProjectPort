@@ -16,13 +16,13 @@ function Typ() {
       // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
-    })
+    },[])
 
     
   return (
     <div>
-      <h3>
-            <span className="element"></span>
+      <h3 className='typ'>
+            <span className="element" ></span>
           </h3>
     </div>
   )
