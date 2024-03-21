@@ -3,7 +3,7 @@ export  const data = [
 
 
   {
-    num: "01",
+
     ImgSrc:
     "/img/card.mp4",
     title: "Profile Card",
@@ -11,7 +11,7 @@ export  const data = [
     links:"https://asadkhan41376.github.io/my-first-website"
   },
   {
-    num: "02",
+
     ImgSrc:
     "/img/quiz.mp4",
     title: " Quiz App ",
@@ -20,7 +20,7 @@ export  const data = [
   },
 
   {
-    num: "03",
+
     ImgSrc:
     "/img/buzy.mp4",
     title: "Buzynet-site",
@@ -28,7 +28,7 @@ export  const data = [
     links:"https://deft-bunny-468651.netlify.app"
   },
     {
-      num: "04",
+     
       ImgSrc:
       "/img/tour.mp4",
       title: "Tour Website ",

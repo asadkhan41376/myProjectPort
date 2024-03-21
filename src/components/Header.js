@@ -4,6 +4,9 @@ import gsap from "gsap/all";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import { IoIosMenu } from "react-icons/io";
+import Change from "./Change";
+
+
 
 
 
@@ -45,7 +48,12 @@ window.addEventListener("scroll",function(){
         <div className="logo">
           <h1>
             Port<span>folio</span>
+         
           </h1>
+        </div>
+        <div className="ThemChanger staGar">
+        <Change className="changecompo"/>
+
         </div>
         <div className={menu ? " nav-list " : "nav-mobile"}>
           <ul>

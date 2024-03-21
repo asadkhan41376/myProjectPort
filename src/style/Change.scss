@@ -1,0 +1,70 @@
+
+.perent{
+position: relative;
+}
+.perent .Color_icon{
+    font-size: 25px;
+    color: var(--color);
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+      
+.color_box{
+    cursor: pointer;
+    right: 50px;
+    top: 0;
+    transform: scale(0);
+    position: absolute;
+    border: 1px solid var(--color);
+    padding: 8px 5px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    gap: 10px;
+
+    
+}
+.C_btn{
+    width: 20px ;
+    height: 20px ;
+    border-radius: 50%;
+}
+.greenBtn{
+    
+    background-color:#3ff433;
+}
+
+.redBtn{
+    background-color:#FF652F;
+}
+
+.blueBtn{
+    background-color:  #3AAFA9;
+}
+
+.purplBtn{
+    background-color: #8727BA;
+}
+
+.pinkBtn{
+    background-color: #A5355A;
+}
+
+// #7DC2AD
+// #5CDB94
+// #A5355A
+
+
+
+@media only screen and (max-width: 600px) {
+.color_box{
+    width: 70px;
+   flex-wrap: wrap;
+    top: -10px;
+    right: 30px;
+    border-radius: 10px;
+}
+}

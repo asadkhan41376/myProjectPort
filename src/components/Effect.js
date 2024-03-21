@@ -11,9 +11,9 @@ function Effect() {
       {data.map((item, index) => {
         return (
           <>
-            <div className="elm">
+            <div className="elm" key={index}>
               <div className="num">
-                <span>{item.num}</span>
+                <span>{index+1}</span>
               </div>
 
               <div className="mobile_image">
