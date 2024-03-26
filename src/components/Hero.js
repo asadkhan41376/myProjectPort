@@ -18,7 +18,7 @@ import { TimeLine } from "./Header";
  
 function Hero() {
   const [isSlide, setIsSlide] = useState(false);
-
+useEffect(()=>{
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
       setIsSlide(true);
@@ -29,6 +29,8 @@ function Hero() {
       window.removeEventListener("scroll");
     }
   });
+},[])
+  
 
  
   // useGSAP(()=>{

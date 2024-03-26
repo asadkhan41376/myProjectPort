@@ -16,30 +16,35 @@ function Change() {
     document.documentElement.style.setProperty('--color',green)
     document.documentElement.style.setProperty('--bgcolor',"#1b1b1b")
     setGreen(green)
+    setBtn(!btn)
   }
 
   const RedColor=()=>{
     document.documentElement.style.setProperty('--color',orenge)
     document.documentElement.style.setProperty('--bgcolor',"#1b1b1b")
     setOrenge(orenge)
+    setBtn(!btn)
   }
 
   const BlueColor=()=>{
     document.documentElement.style.setProperty('--color',blue)
     document.documentElement.style.setProperty('--bgcolor',"#1b1b1b")
     setBlue(blue)
+    setBtn(!btn)
   }
 
   const purplColor=()=>{
     document.documentElement.style.setProperty('--color',purpl)
     document.documentElement.style.setProperty('--bgcolor',"#1b1b1b")
     setPurpl(purpl)
+    setBtn(!btn)
   }
 
   const PinkColor=()=>{
     document.documentElement.style.setProperty('--color',pink)
     document.documentElement.style.setProperty('--bgcolor',"#1b1b1b")
     setPink(pink)
+    setBtn(!btn)
   }
 
   const btnm =()=>{

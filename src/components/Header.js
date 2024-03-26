@@ -1,5 +1,5 @@
 "use client";
-import React, { useState,useLocation } from "react";
+import React, { useState,useLocation, useEffect } from "react";
 import gsap from "gsap/all";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
@@ -35,12 +35,15 @@ function Header() {
   function toggle() {
     setMenu(!menu);  // menu  is not ecual to  setMenu 
   }
-window.addEventListener("scroll",function(){
-  if(window.scrollY > 5){
-    setMenu(menu); 
-  }
- 
-})
+useEffect(()=>{
+  window.addEventListener("scroll",function(){
+    if(window.scrollY > 5){
+      setMenu(menu); 
+    }
+   
+  })
+},)
+
 
   return (
     <>
@@ -51,10 +54,7 @@ window.addEventListener("scroll",function(){
          
           </h1>
         </div>
-        <div className="ThemChanger staGar">
-        <Change className="changecompo"/>
-
-        </div>
+        
         <div className={menu ? " nav-list " : "nav-mobile"}>
           <ul>
             <li className="staGar">
@@ -73,6 +73,12 @@ window.addEventListener("scroll",function(){
               <Link href="/contact" onClick={menu ? "" : toggle}>contect</Link>
             </li>
           </ul>
+          
+        </div>
+
+        <div className="ThemChanger staGar">
+        <Change className="changecompo"/>
+
         </div>
         <div className="menu-i" onClick={toggle}>
           {menu ?  <IoIosMenu   className="staGar menu" />: <IoMdClose className="close" />}

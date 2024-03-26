@@ -3,6 +3,8 @@ import "./globals.scss";
 import Header from "@/components/Header";
 import ScrollTop from "@/components/ScrollTop";
 import Footer from "@/components/Footer";
+import CustomCurser from "@/components/customCurser";
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className} >
       <Header/>
-  
+      <CustomCurser/>
         {children}
         <ScrollTop/>
         <Footer/>

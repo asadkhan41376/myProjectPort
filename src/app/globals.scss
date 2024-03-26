@@ -2,7 +2,6 @@
 @import "/src/style/btn.scss";
 @import "/src/style/contect.scss";
 @import "/src/style/footer.scss";
-@import "/src/style/Form.scss";
 @import "/src/style/header.scss";
 @import "/src/style/hero.scss";
 @import "/src/style/imgFlip.scss";
@@ -19,7 +18,8 @@
 }
 :root {
   --color: #3AAFA9;
-  --bgcolor: #366e6c;
+  --bgcolor: #181818;
+  --textColor:#ffffff;
 }
 ::selection {
   background-color: var(--color);

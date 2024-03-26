@@ -16,7 +16,7 @@ import Form from "./Form";
 function Contect() {
   return (
     <>
-    <Form/>
+    
 
       <section className="contect-secound-section" id="contect-secound-section">
         <div className="map">
