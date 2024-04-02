@@ -8,6 +8,7 @@ import { FaYoutube } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 
+
 function Footer() {
   const [isSlide, setIsSlide] = useState(false);
   const [isYear, setIsYear] = useState("");
@@ -24,14 +25,14 @@ function Footer() {
     const d = new Date();
     let year = d.getFullYear();
     setIsYear(year)
-  }, []);
+  },[isSlide]);
 
   return (
     <>
       <div className={`footer ${isSlide ? " slide" : ""} `}>
         <div className="footer_first">
-          <div className="ftr_mid">
-            <h1>follow us</h1>
+          <div className="coll">
+            <h1>Follow me</h1>
             <ul className="ftr_list">
               <li>
                 <Link href="">
@@ -55,7 +56,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="ftr_right">
+          <div className="coll">
             <h1>Links</h1>
             <ul className="ftr_list ">
               <li>
@@ -69,9 +70,24 @@ function Footer() {
               </li>
             </ul>
           </div>
+
+          <div className="coll">
+            <h1>Contact Me</h1>
+           <Link href="tel:7976891704"> 7976891704</Link>
+          </div>
+
+          <div className="coll">
+            <h1>Address</h1>
+
+           <p><Link href="/contact">Sajjan Nagar A Block Udaipur Raj.</Link></p>
+          </div>
+
+        
         </div>
 
+     
         <div className="footer_secound">
+          
           <div className="img_box">
             <img src="/img/my.jpg" alt="" />
           </div>

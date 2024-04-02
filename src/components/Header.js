@@ -8,26 +8,32 @@ import Change from "./Change";
 
 
 
+import { IoMenu } from "react-icons/io5";
 
 
 
 
 
-//  export const TimeLine= ()=>{
-//   const tl = gsap.timeline()
-//   tl.from(".logo", {
-//     y: -100,
-//     opacity: 0,
-//     duration: 1,
-//   }).from(".staGar", {
-//     y: -100,
-//     stagger: .1,
-//     opacity: 0,
-//     duration: 1,
-//   })
 
-//   return tl 
-//  }
+
+
+
+
+ export const TimeLine= ()=>{
+  const tl = gsap.timeline()
+  tl.from(".logo", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+  }).from(".staGar", {
+    y: -100,
+    stagger: .1,
+    opacity: 0,
+    duration: 1,
+  })
+
+  return tl 
+ }
 
 function Header() {
 
@@ -42,7 +48,7 @@ useEffect(()=>{
     }
    
   })
-},)
+},[menu])
 
 
   return (
@@ -81,7 +87,7 @@ useEffect(()=>{
 
         </div>
         <div className="menu-i" onClick={toggle}>
-          {menu ?  <IoIosMenu   className="staGar menu" />: <IoMdClose className="close" />}
+          {menu ?  <IoMenu    className="staGar menu" />: <IoMdClose className="close" />}
         </div>
       </nav>
     </>

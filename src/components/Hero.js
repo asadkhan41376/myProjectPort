@@ -29,30 +29,30 @@ useEffect(()=>{
       window.removeEventListener("scroll");
     }
   });
-},[])
+},[isSlide])
   
 
  
-  // useGSAP(()=>{
-  //   const tl = TimeLine()
+  useGSAP(()=>{
+    const tl = TimeLine()
       
-  //   tl.from(".content", {
-  //     x: -100,
-  //     opacity: 0,
-  //     duration: 1.5,
-  //   })
-  //     .from(".hero-img img", {
-  //       x: 100,
-  //       opacity: 0,
-  //       duration: 1.5,
-  //     })
-  //     .from(".icon-react,.icon-next,.icon-js,.icon-css", {
-  //       stagger: 0.2,
-  //       opacity: 0,
-  //       scale: 0,
-  //       duration: 1.2,
-  //     });
-  // })
+    tl.from(".content", {
+      x: -100,
+      opacity: 0,
+      duration: 1.5,
+    })
+      .from(".hero-img img", {
+        x: 100,
+        opacity: 0,
+        duration: 1.5,
+      })
+      .from(".icon-react,.icon-next,.icon-js,.icon-css", {
+        stagger: 0.2,
+        opacity: 0,
+        scale: 0,
+        duration: 1.2,
+      });
+  })
 
  
    

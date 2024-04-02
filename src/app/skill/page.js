@@ -1,16 +1,10 @@
-
-
-
-
-
-import Contect from '@/components/contect'
+import Skill from '@/components/Skill'
 import React from 'react'
 
 function page() {
   return (
     <div>
-    <Contect/>
-
+      <Skill/>
     </div>
   )
 }

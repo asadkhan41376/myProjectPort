@@ -8,7 +8,7 @@ function Button({name,href}) {
   return (
     <>
   
-<Link href={href} className='btn'>{name}</Link>
+<Link href={href}  className='btn'>{name}</Link>
 
    
     </>

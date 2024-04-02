@@ -7,6 +7,8 @@
 @import "/src/style/imgFlip.scss";
 @import "/src/style/projects.scss";
 @import "/src/style/Change.scss";
+@import "/src/style/FromRight.scss";
+@import "/src/style/skill.scss";
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Fira+Sans:wght@500&family=Lilita+One&family=Montserrat:wght@900&family=Playfair+Display+SC:wght@700&family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,400;0,500;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
 * {
@@ -19,12 +21,13 @@
 :root {
   --color: #3AAFA9;
   --bgcolor: #181818;
-  --textColor:#ffffff;
+
 }
 ::selection {
   background-color: var(--color);
   color: white;
 }
+
 
 html,
 body {

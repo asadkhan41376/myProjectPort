@@ -6,7 +6,6 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
-import Image from "next/image";
 
 
 function About() {
@@ -26,7 +25,7 @@ function About() {
     });
 
    
-  }, []);
+  },[]);
   return (
     <>
       <div className="About-container">
@@ -47,7 +46,6 @@ function About() {
         </div>
       </div>
       <div className="section-2">
-        <Image src="/img/dot.png"  className="dotImag"alt=""  width={300} height={300}/>
         <h1>
          <span className="h1-span"> Get in touch </span>  with me on social media. It's the best way to stay
           connected with me and get quick updates on what I'm up to. Don't miss

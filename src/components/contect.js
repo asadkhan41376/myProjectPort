@@ -1,11 +1,7 @@
 import React from "react";
 
-
-import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
 import Form from "./Form";
-
+import FormRighr from "./FormRighr";
 
 
 {/* <a href="https://www.instagram.com/md._.asad_" class="social-icon"><i class="fab fa-instagram"></i></a>
@@ -17,6 +13,7 @@ function Contect() {
   return (
     <>
     
+   <Form />
 
       <section className="contect-secound-section" id="contect-secound-section">
         <div className="map">

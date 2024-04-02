@@ -1,26 +1,31 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 
 function ScrollTop() {
   const [isActiv, setIsActiv] = useState(false);
-  if (typeof window !== 'undefined'){
+
+  useEffect(()=>{
+    if (typeof window !== 'undefined'){
+      window.addEventListener("scroll", function () {
+        if (this.window.scrollY > 450) {
+          setIsActiv(true);
+        } else {
+          setIsActiv(false);
+        }
+      });
+    }
+
+
     window.addEventListener("scroll", function () {
-      if (this.window.scrollY > 450) {
-        setIsActiv(true);
-      } else {
-        setIsActiv(false);
-      }
-    });
-  }
-  // window.addEventListener("scroll", function () {
-  //   if (this.window.scrollY > 450) {
-  //     setIsActiv(true);
-  //   } else {
-  //     setIsActiv(false);
-  //   }
-  // });
+    if (this.window.scrollY > 450) {
+      setIsActiv(true);
+    } else {
+      setIsActiv(false);
+    }
+  });
+  },[isActiv])
 
   const toTop = () => {
     window.scrollTo({

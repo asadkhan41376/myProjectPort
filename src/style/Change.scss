@@ -9,8 +9,19 @@ position: relative;
     cursor: pointer;
 
 }
+.roll{
+    animation: roll 2s  linear infinite;
+}
 
-      
+ @keyframes roll {
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+    
+ }  
 .color_box{
     cursor: pointer;
     right: 50px;
@@ -25,6 +36,7 @@ position: relative;
     align-items: center;
     // justify-content: center;
     gap: 10px;
+    
 
     
 }
@@ -36,6 +48,7 @@ position: relative;
 .greenBtn{
     
     background-color:#3ff433;
+   
 }
 
 .redBtn{
@@ -68,5 +81,6 @@ position: relative;
     top: -10px;
     right: 30px;
     border-radius: 10px;
+    z-index: -1;
 }
 }

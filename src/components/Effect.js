@@ -42,4 +42,4 @@ function Effect() {
   )
 }
 
-export default Effect
+export default Effect;

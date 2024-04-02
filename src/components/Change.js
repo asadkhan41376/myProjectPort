@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoSettingsOutline } from "react-icons/io5";
+
+
 
 
 
@@ -9,12 +11,13 @@ function Change() {
   const [blue,setBlue]=useState("#3AAFA9")
   const [purpl,setPurpl]=useState("#8727BA")
   const [pink,setPink]=useState("#A5355A")
+  
   const [btn,setBtn]=useState(true)
 
 
   const GreenColor=()=>{
     document.documentElement.style.setProperty('--color',green)
-    document.documentElement.style.setProperty('--bgcolor',"#1b1b1b")
+    document.documentElement.style.setProperty('--bgcolor',"black")
     setGreen(green)
     setBtn(!btn)
   }
@@ -47,6 +50,8 @@ function Change() {
     setBtn(!btn)
   }
 
+  
+
   const btnm =()=>{
     setBtn(!btn)
   }
@@ -61,7 +66,7 @@ function Change() {
         <div className="purplBtn C_btn" onClick={purplColor}></div>
         <div className="pinkBtn C_btn" onClick={PinkColor}></div>
       </div>
-      <a className="Color_icon"onClick={btnm}><IoSettingsOutline/></a>
+      <a className="Color_icon"onClick={btnm}><IoSettingsOutline className='roll'/></a>
 
 </div>
      

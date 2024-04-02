@@ -1,0 +1,36 @@
+.From_right{
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.From_right ul{
+    display: flex;
+    align-items: center;
+   gap: 52px;
+   color: white;
+   list-style: none;
+   width: 100%;
+}
+.From_right ul li a{
+    color: var(--color);
+    font-size: 30px;
+}
+.From_right  a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .From_right{
+        padding: 100px 0;
+        padding-bottom: 0%;
+        // background-color: aqua;
+    }
+
+
+}
