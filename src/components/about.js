@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+
 import Link from "next/link";
 
 
@@ -62,6 +64,10 @@ function About() {
           </div>
           <div className="AboutElm" data-img="/img/wb.webp">
           <Link href="https://wa.me/7976891704" target="blank"><FaWhatsapp  className="about_icon whatsup"/></Link>
+
+          </div>
+          <div className="AboutElm" data-img="/img/linkdin.avif">
+          <Link href="https://www.linkedin.com/in/mohmmad-asad-591981258/" target="blank"><FaLinkedinIn  className="about_icon linkdin"/></Link>
 
           </div>
         </div>

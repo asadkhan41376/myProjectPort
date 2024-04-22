@@ -104,7 +104,7 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  gap: 250px;
+  gap: 220px;
 }
 .instagram {
   color: #a5355a;
@@ -116,8 +116,11 @@
   color: #3be35a;
 }
 
+.linkdin{
+  color: #0A66C2;
+}
 .AboutElm .about_icon {
-  font-size: 80px;
+  font-size: 70px;
   cursor: pointer;
 }
 
@@ -155,11 +158,13 @@
   }
 
   .icons-div {
+    flex-wrap: wrap;
+    padding: 0 100px;
     gap: 50px;
   }
 
   .AboutElm .about_icon {
-    font-size: 60px;
+    font-size: 50px;
     cursor: pointer;
   }
 }
@@ -187,4 +192,10 @@
   .dotImag {
     display: none;
   }
+  .icons-div {
+    flex-wrap: wrap;
+    padding: 0 80px;
+    gap: 50px;
+  }
+
 }

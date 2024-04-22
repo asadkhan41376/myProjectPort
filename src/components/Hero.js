@@ -30,8 +30,6 @@ useEffect(()=>{
     }
   });
 },[isSlide])
-  
-
  
   useGSAP(()=>{
     const tl = TimeLine()
@@ -52,7 +50,7 @@ useEffect(()=>{
         scale: 0,
         duration: 1.2,
       });
-  })
+  },[])
 
  
    
@@ -125,3 +123,4 @@ useEffect(()=>{
 }
 
 export default Hero;
+

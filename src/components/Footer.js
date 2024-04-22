@@ -35,22 +35,22 @@ function Footer() {
             <h1>Follow me</h1>
             <ul className="ftr_list">
               <li>
-                <Link href="">
+                <Link href="https://www.instagram.com/mohd____asad">
                   <FaInstagram />
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="https://youtube.com/channel/UC8HPJmfryPXaXq01IR-ZuBg">
                   <FaYoutube />
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="https://www.linkedin.com/in/mohmmad-asad-591981258/">
                   <FaLinkedinIn />
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="https://wa.me/7976891704">
                   <FaWhatsapp />
                 </Link>
               </li>
