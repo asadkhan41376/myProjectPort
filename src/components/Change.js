@@ -17,7 +17,7 @@ function Change() {
 
   const GreenColor=()=>{
     document.documentElement.style.setProperty('--color',green)
-    document.documentElement.style.setProperty('--bgcolor',"black")
+    document.documentElement.style.setProperty('--bgcolor',"#1b1b1b")
     setGreen(green)
     setBtn(!btn)
   }
