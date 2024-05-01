@@ -1,14 +1,34 @@
-
+"use client"
 import { data } from "@/projectData/db";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
+import Button from "./Button";
+import { useState } from "react";
 
 function Effect() {
+  const [items ,setItems]=useState(data)
+ const FillterItem =(catItem)=>{
+const upda = data.filter((item)=>{
+return item.category=== catItem;
+})
+// console.log("Filtered items:", upda);
+setItems(upda)
+ }
   return (
     <>
     <div className="elements">
       <h1>Explorer My Project </h1>
-      {data.map((item, index) => {
+
+      <div className="fillter">
+      <ul>
+        <li onClick={()=>setItems(data)}><Button href="" name="All"/></li>
+       <li onClick={()=>FillterItem("webProject")}><Button href="" name="Web Projects"/></li> 
+        <li onClick={()=>FillterItem("Bootstrap")}><Button href="" name="Bootstrap"/></li>
+      
+       
+      </ul>
+      </div>
+      {items.map((item, index) => {
         return (
           <>
             <div className="elm" key={index}>
