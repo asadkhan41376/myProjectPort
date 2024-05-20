@@ -7,10 +7,7 @@ import { IoLogoCss3 } from "react-icons/io5";
 import Image from "next/image";
 function ImgFlip() {
 
-  const sound = useRef()
-  const handelFlip=()=>{
-sound.current.play()
-  }
+
   
     useEffect(()=>{
 // ================================ flip image ======================================
@@ -43,8 +40,8 @@ function imageFlip() {
     <>
       <div className="imgcon">
           <div className="hero-img"  >
-            <div className="hero-img-flip-con" onMouseEnter={handelFlip}>
-              <audio src="/sound/flipsound.mp3" ref={sound}></audio>
+            <div className="hero-img-flip-con" >
+       
               <img src="/img/hero1.webp" className="frunt" alt="" priority="high"/>
               <img src="/img/CapHero.jpg" alt="sss" className="back" priority="high"  />
             </div>

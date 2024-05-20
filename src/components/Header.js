@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useLocation, useEffect } from "react";
+import React, { useState, useLocation, useEffect, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
@@ -26,6 +26,7 @@ export const TimeLine = () => {
 
 function Header() {
   const [menu, setMenu] = useState(true);
+  
   function toggle() {
     setMenu(!menu); // menu  is not ecual to  setMenu
   }
@@ -37,6 +38,8 @@ function Header() {
     });
   }, [menu]);
 
+
+
   return (
     <>
       <nav>
@@ -46,10 +49,11 @@ function Header() {
           </h1>
         </div>
 
-        <div className={menu ? " nav-list " : "nav-mobile"}>
+        <div className={menu ? " nav-list " : "nav-mobile"} >
           <ul>
-            <li className="staGar">
-              <Link href="/" onClick={menu ? "" : toggle}>
+            <li className="staGar" >
+              <audio src="/sound/sound-1-167181.mp3"></audio>
+              <Link href="/" onClick={menu ? "" : toggle} >
                 home
               </Link>
             </li>
