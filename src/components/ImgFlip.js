@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaReact } from "react-icons/fa6";
 import { TbBrandJavascript } from "react-icons/tb"; 
 import { SiNextdotjs } from "react-icons/si";
@@ -7,7 +7,11 @@ import { IoLogoCss3 } from "react-icons/io5";
 import Image from "next/image";
 function ImgFlip() {
 
-
+  const sound = useRef()
+  const handelFlip=()=>{
+sound.current.play()
+  }
+  
     useEffect(()=>{
 // ================================ flip image ======================================
 function imageFlip() {
@@ -32,11 +36,15 @@ function imageFlip() {
     // ================================ flip image end ======================================
         
     },[])
+
+
+
   return (
     <>
       <div className="imgcon">
-          <div className="hero-img">
-            <div className="hero-img-flip-con">
+          <div className="hero-img"  >
+            <div className="hero-img-flip-con" onMouseEnter={handelFlip}>
+              <audio src="/sound/flipsound.mp3" ref={sound}></audio>
               <img src="/img/hero1.webp" className="frunt" alt="" priority="high"/>
               <img src="/img/CapHero.jpg" alt="sss" className="back" priority="high"  />
             </div>

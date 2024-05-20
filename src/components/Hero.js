@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "@/style/hero.scss";
 import Button from "./Button";
 import { FaBrush } from "react-icons/fa6";
@@ -12,6 +12,7 @@ import { TimeLine } from "./Header";
 
 function Hero() {
   const [isSlide, setIsSlide] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 300) {
@@ -24,10 +25,11 @@ function Hero() {
       };
     });
   }, [isSlide]);
-
+  
+const content =useRef()
   useGSAP(() => {
     const tl = TimeLine();
-    tl.from(".content", {
+    tl.from(content.current, {
       x: -100,
       opacity: 0,
       duration: 1.5,
@@ -44,11 +46,10 @@ function Hero() {
         duration: 1.2,
       });
   }, []);
-
   return (
     <>
       <div className="container">
-        <div className="content">
+        <div className="content" ref={content}>
           <h5>Hello I am</h5>
           <h1>Mohammad Asad</h1>
           <Typ />
