@@ -71,7 +71,7 @@ const sound = useRef()
 <div className="perent">
 <div className="color_box " style={btn ?{ transform:"scale(0)"}: {transform:"scale(1)"}}>
         <div className="greenBtn C_btn" onClick={GreenColor} ></div>
-        <audio src="/sound/wosh.mp3"ref={sound2} ></audio>
+        <audio src="/sound/wosh.mp3" ref={sound2} ></audio>
         <div className="redBtn C_btn" onClick={RedColor}></div>
         <div className="blueBtn C_btn" onClick={BlueColor}></div>
         <div className="purplBtn C_btn" onClick={purplColor}></div>
