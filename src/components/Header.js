@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useLocation, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";

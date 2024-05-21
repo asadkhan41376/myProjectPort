@@ -7,6 +7,7 @@ import CustomCurser from "@/components/customCurser";
 
 
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -18,11 +19,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className} >
+    
+      
       <Header/>
       <CustomCurser/>
         {children}
         <ScrollTop/>
         <Footer/>
+   
         </body>
       
     </html>
