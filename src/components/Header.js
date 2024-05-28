@@ -38,8 +38,10 @@ function Header() {
     });
   }, [menu]);
 
-
-
+const  sound3 =useRef()
+const sound =()=>{
+  sound3.current.play()
+}
   return (
     <>
       <nav>
@@ -52,28 +54,28 @@ function Header() {
         <div className={menu ? " nav-list " : "nav-mobile"} >
           <ul>
             <li className="staGar" >
-              <audio src="/sound/sound-1-167181.mp3"></audio>
-              <Link href="/" onClick={menu ? "" : toggle} >
+              <audio src="/sound/sound-1-167181.mp3" ref={sound3}></audio>
+              <Link href="/" onClick={menu ? "" : toggle}  onMouseEnter={sound} >
                 home
               </Link>
             </li>
             <li className="staGar">
-              <Link href="/about" onClick={menu ? "" : toggle}>
+              <Link href="/about" onClick={menu ? "" : toggle} >
                 about
               </Link>
             </li>
             <li className="staGar">
-              <Link href="/skill" onClick={menu ? "" : toggle}>
+              <Link href="/skill" onClick={menu ? "" : toggle} >
                 skill
               </Link>
             </li>
             <li className="staGar">
-              <Link href="/project" onClick={menu ? "" : toggle}>
+              <Link href="/project" onClick={menu ? "" : toggle} >
                 project
               </Link>
             </li>
             <li className="staGar">
-              <Link href="/contact" onClick={menu ? "" : toggle}>
+              <Link href="/contact" onClick={menu ? "" : toggle} >
                 contect
               </Link>
             </li>
@@ -83,7 +85,7 @@ function Header() {
         <div className="ThemChanger staGar">
           <Change className="changecompo" />
         </div>
-        <div className="menu-i" onClick={toggle}>
+        <div className="menu-i" onClick={toggle} >
           {menu ? (
             <IoMenu className="staGar menu" />
           ) : (
