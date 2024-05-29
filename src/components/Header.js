@@ -7,6 +7,7 @@ import { IoMdClose } from "react-icons/io";
 import Change from "./Change";
 
 import { IoMenu } from "react-icons/io5";
+import { usePathname } from "next/navigation";
 
 export const TimeLine = () => {
   const tl = gsap.timeline();
@@ -26,6 +27,7 @@ export const TimeLine = () => {
 
 function Header() {
   const [menu, setMenu] = useState(true);
+  const pathName =usePathname()
   
   function toggle() {
     setMenu(!menu); // menu  is not ecual to  setMenu
@@ -55,27 +57,40 @@ const sound =()=>{
           <ul>
             <li className="staGar" >
               <audio src="/sound/sound-1-167181.mp3" ref={sound3}></audio>
-              <Link href="/" onClick={menu ? "" : toggle}  onMouseEnter={sound} >
+            
+              <Link href="/" onClick={menu ? "" : toggle}  onMouseEnter={sound}
+              className={`${pathName === '/' ? 'actv ': ''}`}
+              >
                 home
               </Link>
             </li>
             <li className="staGar">
-              <Link href="/about" onClick={menu ? "" : toggle} >
+              <Link href="/about" onClick={menu ? "" : toggle} 
+                className={`${pathName === '/about' ? 'actv ': ''}`}
+              >
                 about
               </Link>
             </li>
             <li className="staGar">
-              <Link href="/skill" onClick={menu ? "" : toggle} >
+              <Link href="/skill" onClick={menu ? "" : toggle}
+               className={`${pathName === '/skill' ? 'actv ': ''}`}
+              >
                 skill
               </Link>
             </li>
             <li className="staGar">
-              <Link href="/project" onClick={menu ? "" : toggle} >
+              <Link href="/project" onClick={menu ? "" : toggle} 
+                className={`${pathName === '/project' ? 'actv ': ''}`}
+              >
+
+
                 project
               </Link>
             </li>
             <li className="staGar">
-              <Link href="/contact" onClick={menu ? "" : toggle} >
+              <Link href="/contact" onClick={menu ? "" : toggle}
+                  className={`${pathName === '/contact' ? 'actv ': ''}`}
+              >
                 contect
               </Link>
             </li>

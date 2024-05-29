@@ -41,6 +41,16 @@ padding-top: 8px;
   text-transform: capitalize;
   position: relative;
 }
+.nav-list ul .actv {
+border-bottom: 2px solid var(--color);
+padding: 3px 8px;
+// border-radius: 10px;
+  color: white  ;
+
+}
+.nav-list ul .actv:hover{
+  border-bottom: none;
+}
 
 // ===============================mobile navigation ==========
 
@@ -119,3 +129,5 @@ nav a:hover {
 
   }
 }
+
+
