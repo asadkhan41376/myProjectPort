@@ -4,6 +4,9 @@ import Header from "@/components/Header";
 import ScrollTop from "@/components/ScrollTop";
 import Footer from "@/components/Footer";
 import CustomCurser from "@/components/customCurser";
+import "@fontsource/jost"; // Defaults to weight 400
+import "@fontsource/jost/100.css"; // Specify weight
+// import "@fontsource/jost/100-italic.css";
 
 
 
