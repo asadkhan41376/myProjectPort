@@ -33,12 +33,12 @@ function About() {
       <div className="About-container">
         <div className="overaly"></div>
         <div className="containt">
-          <h3>I m a Designer</h3>
+          <h3>I am a Designer</h3>
           <h1>
             I Can Design Anything <br /> You Want
           </h1>
           <p>
-            Hello I m a web designer, and I'm very passionate and
+            Hello I am a web designer, and I am very passionate and
             dedicated to my work. With 20 years experience as a professional web
             developer, I have acquired the skills and knowledge necessary to
             make your project a success. I enjoy every step of the design
@@ -49,8 +49,8 @@ function About() {
       </div>
       <div className="section-2">
         <h1>
-         <span className="h1-span"> Get in touch </span>  with me on social media. It's the best way to stay
-          connected with me and get quick updates on what I'm up to. Don't miss
+         <span className="h1-span"> Get in touch </span>  with me on social media. It is the best way to stay
+          connected with me and get quick updates on what I am up to. Dont miss
           out on this opportunity to connect, so follow me on your preferred
           social media platform today!
         </h1>

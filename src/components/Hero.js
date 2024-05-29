@@ -54,7 +54,7 @@ const content =useRef()
           <h1>Mohammad Asad</h1>
           <Typ />
           <p>
-            I'm creative designer based in India, and I'm very passionate and
+            I am creative designer based in India, and I am very passionate and
             dedicated to my work.
           </p>
 

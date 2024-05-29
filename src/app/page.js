@@ -1,7 +1,7 @@
 
 "use client"
 import Hero from "@/components/Hero";
-import Sound from "@/components/Sound";
+
 import { useEffect, useRef } from "react";
 
 
@@ -12,16 +12,18 @@ export default function Home() {
   bg.current.play()
 }
 
+
 useEffect(()=>{
-   playSound();
+  
+  playSound()
   
  },[])
   return (
-    <>
+    <div onLoad={playSound}>
 
 <audio src="/sound/shinchan.mp3" ref={bg}></audio>
 <Hero/>
     
-    </>
+    </div>
   );
 }
