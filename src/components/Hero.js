@@ -112,4 +112,6 @@ const content =useRef()
   );
 }
 
+
+
 export default Hero;

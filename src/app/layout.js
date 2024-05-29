@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     
       
       <Header/>
-      <CustomCurser/>
+      <CustomCurser className="hide_mobile"/>
         {children}
         <ScrollTop/>
         <Footer/>
