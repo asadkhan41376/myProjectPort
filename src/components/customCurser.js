@@ -3,7 +3,7 @@ import AnimatedCursor from "react-animated-cursor"
 
 function CustomCurser() {
   return (
-    <>
+    < div className='hide_mobile'>
     <AnimatedCursor
       innerSize={8}
       outerSize={35}
@@ -32,7 +32,8 @@ function CustomCurser() {
         'button',
         '.link'
       ]}
-    />
+  
+      />
     </>
   )
 }
