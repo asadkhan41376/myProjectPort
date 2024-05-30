@@ -8,6 +8,15 @@ function page() {
       <About/>
     </div>
   )
+  
 }
 
+
 export default page
+export const metadata = {
+  title: 'About Me',
+  openGraph: {
+    title: 'about',
+    description: 'This is all about me.',
+  },
+}
