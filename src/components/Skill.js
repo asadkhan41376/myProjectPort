@@ -2,6 +2,7 @@
 import React, { useRef } from 'react'
 import { motion } from "framer-motion"
 import { Scale } from '@mui/icons-material'
+import Image from 'next/image'
 
 
 const ImgData =[
@@ -43,9 +44,10 @@ function Skill() {
             <>
             <motion.div drag  dragConstraints={ref} 
             whileDrag={{scale:1.1}}
-            className="Skill_Card">
+            
+            className="Skill_Card" >
           
-            <img src={e.IMg} alt="" />
+            <Image  fill={true} quality={100}  src={e.IMg} alt="skill img" />
              <div className='overLay'><h1>{e.title}</h1></div>   
         
            </motion.div>
