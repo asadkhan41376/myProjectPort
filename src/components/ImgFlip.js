@@ -41,9 +41,9 @@ function imageFlip() {
       <div className="imgcon">
           <div className="hero-img"  >
             <div className="hero-img-flip-con" >
-       
-              <img src="/img/hero1.webp" className="frunt" alt="" priority="high"/>
-              <img src="/img/CapHero.jpg" alt="sss" className="back" priority="high"  />
+        
+              <Image src="/img/hero1.webp" fill="true" className="frunt" alt="" priority="high"/>
+              <Image src="/img/CapHero.jpg" alt="sss" fill="true" className="back" priority="high"  />
             </div>
             <div className="icons">
               <FaReact className="icon-react icon" />
