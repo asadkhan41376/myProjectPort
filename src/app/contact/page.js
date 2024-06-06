@@ -18,7 +18,7 @@ function page() {
 export default page
 
 export const metadata = {
-  title: 'Contact Me',
+  title: 'contact Me',
   openGraph: {
     title: 'contact',
     description: 'This is all about mel.',

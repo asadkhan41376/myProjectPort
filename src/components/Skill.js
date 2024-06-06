@@ -8,23 +8,23 @@ import Image from 'next/image'
 const ImgData =[
     {
         title:"HTML",
-        IMg:"/img/icons8-html.png"
+        IMg:"/img/icons8-html.webp"
     },
     {
         title:" CSS",
-        IMg:"/img/css.png"
+        IMg:"/img/css.webp"
     },
     {
         title:"JAVA SCRIPT",
-        IMg:"/img/icons8-js-300.png"
+        IMg:"/img/icons8-js-300.webp"
     },
     {
         title:"BOOTSTRAP",
-        IMg:"/img/bootstrap.png"
+        IMg:"/img/bootstrap.webp"
     },
     {
         title:"NEXT JS",
-        IMg:"/img/icons8-nextjs-300.png"
+        IMg:"/img/icons8-nextjs-300.webp"
     },
 ]
 

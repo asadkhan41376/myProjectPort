@@ -35,7 +35,7 @@ function Footer() {
             <h1>Follow me</h1>
             <ul className="ftr_list">
               <li>
-                <Link href="https://www.instagram.com/mohd____asad">
+                <Link href="https://www.instagram.com/mohd____asad_">
                   <FaInstagram />
                 </Link>
               </li>
