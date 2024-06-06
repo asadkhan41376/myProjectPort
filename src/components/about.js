@@ -66,7 +66,7 @@ function About() {
           <Link href="https://wa.me/7976891704" target="blank"><FaWhatsapp  className="about_icon whatsup"/></Link>
 
           </div>
-          <div className="AboutElm" data-img="/img/linkdin.avif">
+          <div className="AboutElm" data-img="/img/linkdin.webp">
           <Link href="https://www.linkedin.com/in/mohmmad-asad-591981258/" target="blank"><FaLinkedinIn  className="about_icon linkdin"/></Link>
 
           </div>
