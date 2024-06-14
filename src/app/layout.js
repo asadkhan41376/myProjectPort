@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/img/icons8-nextjs-300.png" sizes="any" />
+      <link rel="icon" href="/img/favicon/developer.png" sizes="any" />
       </head>
       <body className={inter.className} >
     

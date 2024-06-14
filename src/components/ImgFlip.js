@@ -42,7 +42,7 @@ function imageFlip() {
           <div className="hero-img"  >
             <div className="hero-img-flip-con" >
         
-              <Image src="/img/hero1.webp" fill={true} quality={100} className="frunt" alt="" priority="high"/>
+              <Image src="/img/hero1.webp" fill={true} sizes="" quality={100} className="frunt" alt="" priority="high"/>
               <Image src="/img/CapHero.jpg" alt="sss"  fill={true} quality={100}  className="back" priority="high"  />
             </div>
             <div className="icons">
