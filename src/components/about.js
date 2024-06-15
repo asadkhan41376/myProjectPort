@@ -16,15 +16,15 @@ function About() {
     let elm = document.querySelectorAll(".AboutElm");
 
     // social-media effect
-    elm.forEach(function (e) {
-      e.addEventListener("mouseenter", function () {
-        var bgimg = e.getAttribute("data-img");
-        bck.style.backgroundImage = `url(${bgimg})`;
-      });
-      e.addEventListener("mouseleave", function () {
-        bck.style.backgroundImage = `url(${""})`;
-      });
-    });
+    // elm.forEach(function (e) {
+    //   e.addEventListener("mouseenter", function () {
+    //     var bgimg = e.getAttribute("data-img");
+    //     bck.style.backgroundImage = `url(${bgimg})`;
+    //   });
+    //   e.addEventListener("mouseleave", function () {
+    //     bck.style.backgroundImage = `url(${""})`;
+    //   });
+    // });
 
    
   },[]);
@@ -39,7 +39,7 @@ function About() {
           </h1>
           <p>
             Hello I am a web designer, and I am very passionate and
-            dedicated to my work. With 20 years experience as a professional web
+            dedicated to my work. With 01 years experience as a professional web
             developer, I have acquired the skills and knowledge necessary to
             make your project a success. I enjoy every step of the design
             process, from discussion and collaboration.
@@ -56,13 +56,13 @@ function About() {
         </h1>
         <div className="icons-div">
          
-          <div className="AboutElm" data-img="/img/insta.webp">
+          <div className="AboutElm">
           <Link href="https://www.instagram.com/mohd____asad_" target="blank"><FaInstagram className="about_icon instagram" /></Link> 
           </div>
-          <div className="AboutElm" data-img="/img/yt.webp">
+          <div className="AboutElm">
           <Link href="https://youtube.com/channel/UC8HPJmfryPXaXq01IR-ZuBg" target="blank">  <FaYoutube className="about_icon yt" /></Link>
           </div>
-          <div className="AboutElm" data-img="/img/wb.webp">
+          <div className="AboutElm" >
           <Link href="https://wa.me/7976891704" target="blank"><FaWhatsapp  className="about_icon whatsup"/></Link>
 
           </div>
