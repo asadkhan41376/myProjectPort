@@ -48,9 +48,9 @@ const sound =()=>{
     <>
       <nav>
         <div className="logo">
-          <h1>
+        <Link href="/" style={{textDecoration:"none ",color:"#ffffff"}}> <h1>
             Port<span>folio</span>
-          </h1>
+          </h1></Link> 
         </div>
 
         <div className={menu ? " nav-list " : "nav-mobile"} >
