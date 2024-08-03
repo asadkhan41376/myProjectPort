@@ -9,6 +9,7 @@ import ImgFlip from "./ImgFlip";
 import Typ from "./Typ";
 import { useGSAP } from "@gsap/react";
 import { TimeLine } from "./Header";
+import Sound from "./Sound";
 
 function Hero() {
   const [isSlide, setIsSlide] = useState(false);
@@ -48,6 +49,7 @@ const content =useRef()
   }, []);
   return (
     <>
+    <Sound/>
       <div className="container">
         <div className="content" ref={content}>
           <h5>Hello I am</h5>

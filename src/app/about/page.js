@@ -1,5 +1,8 @@
-import About from '@/components/about'
+// import About from '@/components/about'
 import React from 'react'
+import dynamic from 'next/dynamic'
+
+const About = dynamic(()=>import("@/components/about"))
 
 function page() {
   

@@ -1,10 +1,12 @@
 
 
 
+import dynamic from 'next/dynamic'
 
-
-import Contect from '@/components/contect'
+// import Contect from '@/components/contect'
 import React from 'react'
+
+const Contect = dynamic(()=>import("@/components/contect"))
 
 function page() {
   return (
