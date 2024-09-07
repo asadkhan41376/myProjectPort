@@ -1,77 +1,68 @@
 "use client";
-
+import { useForm } from "react-hook-form";
+import axios from 'axios';
+import React from "react";
 import FormRighr from "./FormRighr";
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-
 
 function Form() {
- 
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm();
 
-    emailjs
-      .sendForm("service_4lfk8qb", "template_ll9h2sq", form.current, {
-        publicKey: "jV8ZlRM-HE8MLrZvL",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-    form.current.reset();
+  const onSubmit = async (data) => {
+    try {
+      const response = await axios.post('/api/contect', data);
+      console.log('Message sent successfully', response);
+      reset();  // Reset the form after submission
+    } catch (error) {
+      console.error('Error sending message', error);
+    }
   };
-
-  
 
   return (
     <div>
-     
       <section className="Contact_first">
-        <form onSubmit={sendEmail} ref={form}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <h1>Contact Me</h1>
           <div>
             <input
               type="text"
               placeholder="Your Name"
-              name="user_name"
-              required
+              {...register("user_name", { required: true })}
             />
+            {errors.user_name && <span>Name is required</span>}
             <input
               type="email"
               placeholder="Your Email"
-              name="user_email"
-              required
+              {...register("user_email", { required: true })}
             />
+            {errors.user_email && <span>Email is required</span>}
           </div>
           <div>
             <input
               type="number"
               placeholder="Your Number"
-              name="user_phone"
-              required
+              {...register("user_phone", { required: true })}
             />
-            <input type="text" placeholder="Your Subject" />
+            {errors.user_phone && <span>Phone is required</span>}
+            <input
+              type="text"
+              placeholder="Your Subject"
+              {...register("subject")}
+            />
           </div>
           <div>
             <textarea
-              placeholder="Write Your Massge Here"
-              name="message"
-              required
+              placeholder="Write Your Message Here"
+              {...register("message", { required: true })}
             />
+            {errors.message && <span>Message is required</span>}
           </div>
-          <input
-            type="submit"
-          
-            className="btn Cbtn"
-            value="send message"
-          />
+          <input type="submit" className="btn Cbtn" value="Send Message" />
         </form>
-
         <FormRighr />
       </section>
     </div>
