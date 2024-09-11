@@ -91,7 +91,7 @@ const sound =()=>{
               <Link href="/contact" onClick={menu ? "" : toggle}
                   className={`${pathName === '/contact' ? 'actv ': ''}`}
               >
-                contect
+               contact
               </Link>
             </li>
           </ul>
