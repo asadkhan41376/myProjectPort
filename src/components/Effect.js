@@ -4,6 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 import Button from "./Button";
 import { useState } from "react";
+import { Grid } from "@mui/material";
 
 function Effect() {
   const [items ,setItems]=useState(data)
@@ -20,13 +21,14 @@ setItems(upda)
       <h1>Explorer My Project </h1>
 
       <div className="fillter">
-      <ul>
-        <li onClick={()=>setItems(data)}><Button href="" name="All"/></li>
-       <li onClick={()=>FillterItem("webProject")}><Button href="" name="Web Projects"/></li> 
-        <li onClick={()=>FillterItem("Bootstrap")}><Button href="" name="Bootstrap"/></li>
+      <Grid container justifyContent="center" spacing={5}>
+        <Grid item lg={2} md={2} sm={6} xs={6} onClick={()=>setItems(data)}><Button href="" name="All"/></Grid>
+       <Grid item  lg={2} md={2} sm={6} xs={6} onClick={()=>FillterItem("webProject")}><Button href="" name="Html/css"/></Grid> 
+        <Grid item  lg={2} md={2} sm={6} xs={6} onClick={()=>FillterItem("Bootstrap")}><Button href="" name="Bootstrap"/></Grid>
+        <Grid  item lg={2} md={2} sm={6} xs={6} onClick={()=>FillterItem("Next_React")}><Button href="" name="React js"/></Grid>
       
        
-      </ul>
+      </Grid>
       </div>
       {items.map((item, index) => {
         return (
