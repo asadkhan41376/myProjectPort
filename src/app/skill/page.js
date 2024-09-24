@@ -1,11 +1,11 @@
 // import Skill from '@/components/Skill'
 import React from 'react'
 import dynamic  from 'next/dynamic'
-const Skill = dynamic(()=>import("@/components/Skill"))
+const SkillSection = dynamic(()=>import("@/sections/skill"))
 function page() {
   return (
     <div>
-      <Skill/>
+      <SkillSection/>
     </div>
   )
 }

@@ -2,16 +2,16 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
 
-const About = dynamic(()=>import("@/components/about"))
+const AboutSection = dynamic(() => import("@/sections/about"))
 
 function page() {
-  
+
   return (
     <div>
-      <About/>
+      <AboutSection />
     </div>
   )
-  
+
 }
 
 

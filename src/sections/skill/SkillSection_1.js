@@ -29,7 +29,7 @@ const ImgData =[
 ]
 
 
-function Skill() {
+function SkillSection_1() {
     const ref = useRef(null)
   return (
     <>
@@ -64,4 +64,4 @@ function Skill() {
   )
 }
 
-export default Skill
+export default SkillSection_1

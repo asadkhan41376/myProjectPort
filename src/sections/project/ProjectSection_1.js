@@ -2,11 +2,11 @@
 import { data } from "@/projectData/db";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
-import Button from "./Button";
 import { useState } from "react";
 import { Grid } from "@mui/material";
+import Button from "@/components/Button";
 
-function Effect() {
+function ProjectSection_1() {
   const [items ,setItems]=useState(data)
  const FillterItem =(catItem)=>{
 const upda = data.filter((item)=>{
@@ -64,4 +64,4 @@ setItems(upda)
   )
 }
 
-export default Effect;
+export default ProjectSection_1;

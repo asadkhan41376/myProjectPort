@@ -4,7 +4,7 @@ import gsap from "gsap";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 
-import Change from "./Change";
+import Change from "../../components/Change";
 
 import { IoMenu } from "react-icons/io5";
 import { usePathname } from "next/navigation";

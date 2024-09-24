@@ -2,14 +2,13 @@
 // import Effect from '@/components/Effect'
 import React from 'react'
 import dynamic from 'next/dynamic'
-const Project = dynamic(()=>import("@/components/Effect"))
+const ProjectSection = dynamic(()=>import("@/sections/project"))
 
 function page() {
   return (
     <>
-     {/* <h1>project</h1> */}
      
-     <Project/>
+     <ProjectSection/>
      </>
   )
 }
