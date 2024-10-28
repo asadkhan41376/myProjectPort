@@ -27,7 +27,7 @@ const AboutSection_2 = () => {
 
       </div>
       <div className="AboutElm" data-img="/img/linkdin.webp">
-      <Link href="https://www.linkedin.com/in/mohmmad-asad-591981258/" target="blank"><FaLinkedinIn  className="about_icon linkdin"/></Link>
+      <Link href="https://www.linkedin.com/in/mohammad-asad-591981258/" target="blank"><FaLinkedinIn  className="about_icon linkdin"/></Link>
 
       </div>
     </div>
