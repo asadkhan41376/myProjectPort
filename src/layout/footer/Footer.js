@@ -45,7 +45,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="https://www.linkedin.com/in/mohmmad-asad-591981258/">
+                <Link href="https://www.linkedin.com/in/mohammad-asad-591981258/">
                   <FaLinkedinIn />
                 </Link>
               </li>
