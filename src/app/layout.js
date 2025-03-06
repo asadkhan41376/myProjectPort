@@ -13,33 +13,23 @@ import WebLayOut from "@/layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Mohammad Asad | Full Stack Developer Portfolio",
-  description: "Welcome to Mohammad Asad's portfolio website showcasing web development projects, skills, and services.",
+  title: "Mohammad Asad Portfolio | Full Stack Developer in Udaipur",
+  description: "Mohammad Asad - Full Stack Developer based in Udaipur, specializing in modern web development and creative design.",
   keywords: [
-    "Mohammad Asad",
-    "Full Stack Developer",
-    "Web Developer Portfolio",
-    "Next.js Developer",
-    "React Developer",
-    "Frontend Developer",
-    "Backend Developer",
-    "MERN Stack Developer",
-    "Web Development Services",
-    "SEO Optimized Website",
+    "Mohammad Asad Portfolio",
+    "mohammad asad Portfolio",
     "Full Stack Developer in Udaipur",
-  "Web Developer Udaipur",
-  "Frontend Developer Udaipur",
-  "Website Developer Udaipur",
-  "Freelance Web Developer Udaipur",
-  "Portfolio Website Developer Udaipur",
-  "Website Designer Udaipur",
-  "Web Development Services Udaipur"
+    "Web Developer Udaipur",
+    "Frontend Developer Udaipur",
+    "Website Developer Udaipur",
+    "Freelance Web Developer Udaipur",
+    "Website Designer Udaipur",
+    "Web Development Services Udaipur"
   ],
   author: "Mohammad Asad",
-  robots: "index, follow",
   openGraph: {
-    title: "Mohammad Asad | Full Stack Developer Portfolio",
-    description: "Explore Mohammad Asad's web development projects and services.",
+    title: "Mohammad Asad Portfolio | Full Stack Developer in Udaipur",
+    description: "Explore Mohammad Asad's portfolio, a Full Stack Developer from Udaipur delivering modern web solutions.",
     url: "https://my-project-port.vercel.app/",
     type: "website",
     images: [
@@ -47,20 +37,21 @@ export const metadata = {
         url: "https://my-project-port.vercel.app/img/favicon/developer.png",
         width: 1200,
         height: 630,
-        alt: "Mohammad Asad Portfolio Website",
-      },
+        alt: "Mohammad Asad Portfolio Image"
+      }
     ],
-    locale: "en_US",
+    site_name: "Mohammad Asad Portfolio"
   },
   twitter: {
     card: "summary_large_image",
     site: "@asad_portfolio",
     creator: "@asad_portfolio",
     title: "Mohammad Asad | Full Stack Developer Portfolio",
-    description: "Explore Mohammad Asad's web development projects and services.",
-    image: "https://my-project-port.vercel.app/img/favicon/developer.png",
-  },
+    description: "Explore Mohammad Asad's web development projects and services in Udaipur.",
+    images: ["https://my-project-port.vercel.app/img/favicon/developer.png"]
+  }
 };
+
 
 export default function RootLayout({ children }) {
   return (
