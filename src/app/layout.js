@@ -25,7 +25,15 @@ export const metadata = {
     "Backend Developer",
     "MERN Stack Developer",
     "Web Development Services",
-    "SEO Optimized Website"
+    "SEO Optimized Website",
+    "Full Stack Developer in Udaipur",
+  "Web Developer Udaipur",
+  "Frontend Developer Udaipur",
+  "Website Developer Udaipur",
+  "Freelance Web Developer Udaipur",
+  "Portfolio Website Developer Udaipur",
+  "Website Designer Udaipur",
+  "Web Development Services Udaipur"
   ],
   author: "Mohammad Asad",
   robots: "index, follow",
