@@ -13,8 +13,12 @@ import WebLayOut from "@/layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  // <meta name="google-site-verification" content="HW7PYxyJG8c9phVcCGwnVjlowfKp5wCCQV2Aa8v0baw" />
   title: "Mohammad Asad Portfolio | Full Stack Developer in Udaipur",
   description: "Mohammad Asad - Full Stack Developer based in Udaipur, specializing in modern web development and creative design.",
+  other:{
+    "google-site-verification":"HW7PYxyJG8c9phVcCGwnVjlowfKp5wCCQV2Aa8v0baw",
+  },
   keywords: [
     "Mohammad Asad Portfolio",
     "mohammad asad Portfolio",
