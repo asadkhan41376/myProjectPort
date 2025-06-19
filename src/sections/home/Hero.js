@@ -5,7 +5,6 @@ import ImgFlip from "../../components/ImgFlip";
 import Typ from "../../components/Typ";
 import { useGSAP } from "@gsap/react";
 import { TimeLine } from "../../layout/header/Header";
-import Sound from "../../components/Sound";
 import Button from "@/components/Button";
 
 function Hero() {
@@ -34,7 +33,7 @@ const content =useRef()
   }, []);
   return (
     <>
-    <Sound/>
+    
       <div className="container">
         <div className="content" ref={content}>
           <h5>Hello I am</h5>
