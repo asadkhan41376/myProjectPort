@@ -7,6 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import Image from "next/image";
 
 
 function Footer() {
@@ -89,7 +90,7 @@ function Footer() {
         <div className="footer_secound">
           
           <div className="img_box">
-            <img src="/img/my.jpg" alt="" />
+            <Image fill src="/img/my.jpg" alt="" />
           </div>
           <h4>
             Developed with love by Mohammad Asad © {isYear}<br />

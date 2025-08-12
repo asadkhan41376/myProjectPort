@@ -5,6 +5,10 @@ import CustomCurser from "@/components/customCurser";
 import "@fontsource/jost"; // Defaults to weight 400
 import "@fontsource/jost/100.css"; // Specify weight
 import WebLayOut from "@/layout";
+import dynamic from "next/dynamic";
+const LoaderWrapper = dynamic(() => import("@/layout/loader/index"), {
+  ssr: false,
+});
 // import "@fontsource/jost/100-italic.css";
 
 
@@ -16,8 +20,8 @@ export const metadata = {
   // <meta name="google-site-verification" content="HW7PYxyJG8c9phVcCGwnVjlowfKp5wCCQV2Aa8v0baw" />
   title: "Mohammad Asad Portfolio | Full Stack Developer in Udaipur",
   description: "Mohammad Asad - Full Stack Developer based in Udaipur, specializing in modern web development and creative design.",
-  other:{
-    "google-site-verification":"HW7PYxyJG8c9phVcCGwnVjlowfKp5wCCQV2Aa8v0baw",
+  other: {
+    "google-site-verification": "HW7PYxyJG8c9phVcCGwnVjlowfKp5wCCQV2Aa8v0baw",
   },
   keywords: [
     "Mohammad Asad Portfolio",
@@ -61,20 +65,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/img/favicon/developer.png" sizes="any" />
+        <link rel="icon" href="/img/favicon/developer.png" sizes="any" />
       </head>
       <body className={inter.className} >
-    
-      
-<WebLayOut>
-      <CustomCurser className="hide_mobile"/>
-        {children}
-        <ScrollTop/>
-        </WebLayOut>
-      
-   
-        </body>
-      
+
+        <LoaderWrapper>
+          <WebLayOut>
+            <CustomCurser className="hide_mobile" />
+            {children}
+            <ScrollTop />
+          </WebLayOut>
+        </LoaderWrapper>
+
+
+      </body>
+
     </html>
   );
 }

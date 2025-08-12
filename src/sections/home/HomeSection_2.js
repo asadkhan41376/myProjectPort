@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { FaBrush } from "react-icons/fa6";
 import { GiArcheryTarget } from "react-icons/gi";
 import { FaRegLightbulb } from "react-icons/fa";
+import Image from 'next/image';
 
 
 const HomeSection_2 = () => {
@@ -25,8 +26,8 @@ const HomeSection_2 = () => {
     <section className="second-section">
         <div className={`scnd-contant ${isSlide ? "slide" : ""}`}>
           <div className="card-scnd">
-            <div className="img">
-              <img src="/img/scnd-img1.webp" alt="" />
+            <div className="img" style={{position:"relative"}}>
+              <Image fill src="/img/scnd-img1.webp" alt="" />
               <GiArcheryTarget className="img-icon" />
             </div>
             <div className="card-contant">
@@ -39,8 +40,8 @@ const HomeSection_2 = () => {
           </div>
 
           <div className="card-scnd">
-            <div className="img">
-              <img src="/img/scnd-img2.webp" alt="" />
+            <div className="img" style={{position:"relative"}}>
+              <Image fill src="/img/scnd-img2.webp" alt="" />
               <FaBrush className="img-icon " />
             </div>
             <div className="card-contant">
@@ -53,8 +54,8 @@ const HomeSection_2 = () => {
           </div>
 
           <div className="card-scnd">
-            <div className="img">
-              <img src="/img/scnd-img3.webp" alt="" />
+            <div className="img" style={{position:"relative"}}>
+              <Image fill src="/img/scnd-img3.webp" alt="" />
               <FaRegLightbulb className="img-icon" />
             </div>
             <div className="card-contant">
