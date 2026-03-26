@@ -27,8 +27,8 @@ const HomeSection_2 = () => {
         <div className={`scnd-contant ${isSlide ? "slide" : ""}`}>
           <div className="card-scnd">
             <div className="img" style={{position:"relative"}}>
-              <Image fill src="/img/scnd-img1.webp" alt="" />
               <GiArcheryTarget className="img-icon" />
+              {/* <Image fill src="/img/scnd-img1.webp" alt="" /> */}
             </div>
             <div className="card-contant">
               <h1>Pixel Perfect</h1>
@@ -41,7 +41,7 @@ const HomeSection_2 = () => {
 
           <div className="card-scnd">
             <div className="img" style={{position:"relative"}}>
-              <Image fill src="/img/scnd-img2.webp" alt="" />
+              {/* <Image fill src="/img/scnd-img2.webp" alt="" /> */}
               <FaBrush className="img-icon " />
             </div>
             <div className="card-contant">
@@ -55,7 +55,7 @@ const HomeSection_2 = () => {
 
           <div className="card-scnd">
             <div className="img" style={{position:"relative"}}>
-              <Image fill src="/img/scnd-img3.webp" alt="" />
+              {/* <Image fill src="/img/scnd-img3.webp" alt="" /> */}
               <FaRegLightbulb className="img-icon" />
             </div>
             <div className="card-contant">

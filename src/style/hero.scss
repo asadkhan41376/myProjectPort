@@ -1,11 +1,12 @@
 .container {
 background-color: var(--bgcolor);
-padding: 80px 0;
+padding: 100px 0;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+
 }
 
 .content {
@@ -221,13 +222,13 @@ padding: 80px 0;
 }
 .img {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .img-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 35px;
+  min-height: 80px;
 }
 
 // ============================================================
